@@ -1,5 +1,12 @@
 :root {
   --max-width: 1100px;
+  --base-profile: #0f0935;
+  --base-background: #070d22;
+  --base-border: #1c2f41;
+  --base-post: #112131;
+  --base-title: #e7edf4;
+  --base-subtitle: #c4d4e3;
+  --brand-blue: #8c44e9;
 }
 
 * {

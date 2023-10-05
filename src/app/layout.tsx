@@ -2,7 +2,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Nunito } from "next/font/google";
 import StyledComponentsRegistry from "./lib/registry";
-import { Wrapper } from "./components/Wrapper";
+import { LayoutWrapper } from "./components/LayoutWrapper";
 
 const nunito = Nunito({ subsets: ["latin"] });
 
@@ -20,7 +20,7 @@ export default function RootLayout({
     <html lang="pt-br">
       <body className={`${nunito.className}`}>
         <StyledComponentsRegistry>
-          <Wrapper>{children}</Wrapper>
+          <LayoutWrapper>{children}</LayoutWrapper>
         </StyledComponentsRegistry>
       </body>
     </html>

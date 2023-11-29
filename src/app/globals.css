@@ -2,10 +2,14 @@
   --max-width: 1100px;
   --base-profile: #0f0935;
   --base-background: #070d22;
+  --base-input: #040f1a;
   --base-border: #1c2f41;
   --base-post: #112131;
   --base-title: #e7edf4;
   --base-subtitle: #c4d4e3;
+  --base-text: #afc2d4;
+  --base-span: #7b96b2;
+  --base-label: #3a536b;
   --brand-blue: #8c44e9;
 }
 

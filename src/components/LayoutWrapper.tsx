@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 import styled from "styled-components";
 
 const Container = styled.main`
@@ -27,6 +28,9 @@ const Header = styled.div`
   img {
     margin-top: 50px;
   }
+  a {
+    height: fit-content;
+  }
 
   @media (max-width: 600px) {
     background-image: url("/Cover_xs.png");
@@ -37,12 +41,14 @@ export function LayoutWrapper({ children }: { children: React.ReactNode }) {
   return (
     <Container>
       <Header>
-        <Image
-          src={"Logo_github.svg"}
-          alt="logomarca"
-          width={120}
-          height={120}
-        />
+        <Link href="/">
+          <Image
+            src={"/Logo_github.svg"}
+            alt="logomarca"
+            width={120}
+            height={120}
+          />
+        </Link>
       </Header>
       <Section>{children}</Section>
     </Container>

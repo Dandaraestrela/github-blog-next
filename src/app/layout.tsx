@@ -1,14 +1,14 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { Nunito } from "next/font/google";
-import StyledComponentsRegistry from "./lib/registry";
-import { LayoutWrapper } from "./components/LayoutWrapper";
+import StyledComponentsRegistry from "../lib/registry";
+import { LayoutWrapper } from "../components/LayoutWrapper";
 
 const nunito = Nunito({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Dandara Estrela Github-posts blog",
-  description: "A blog with Dandara's github posts",
+  title: "Dandara Estrela Github Blog",
+  description: "A blog with Dandara's Github posts",
 };
 
 export default function RootLayout({
